@@ -23,6 +23,18 @@ function cinco () {
 
 setTimeout( ()=> uno(dos),2000)
 
+//CalBack Hell
+setTimeout(()=>uno(
+    ()=>dos(
+        ()=>tres(
+            ()=>cuatro(
+                ()=>cinco(),
+            )
+        )
+    )
+    ),5000)
+
+
 /*
 //funcion aasincrona
 setTimeout(()=> uno(dos),5000)//recibe otra funcion como parametro
